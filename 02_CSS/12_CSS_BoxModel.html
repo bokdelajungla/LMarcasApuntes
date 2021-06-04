@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Padding</title>
+    <!--
+    BoxModel
+    --------
+
+    Al final el tamaño que ocupa un componenten en la página web es la suma de las propiedades
+
+    1. width
+    2. Height
+    3. padding
+    4. border
+    5. margin
+
+    -->
+    <style>
+        .caja {
+            width: 320px;
+            padding: 10px;
+            border: 5px solid rgb(187, 92, 92);
+            margin: auto;
+        }
+
+        h3{
+            text-align: center;
+            text-decoration:underline
+        }
+
+        img {
+            /*
+                Ejemplo de como centrar una imagen, la propiedad display se verá más adelante
+            */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            width: 40%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- El tamaño horizontal final que ocupa en la pagina sería:
+        320px (width)
+        + 20px (left + right padding)
+        + 10px (left + right border)
+        = 350px
+
+        Misma idea para el tamaño vertical
+    -->
+    <h3>Box Model Elementos HTML</h3>
+    <img src="img/boxmodel.png"/>
+
+    <div class="caja">Lo que ocupa este elemento es: 350px.</div>    
+</body>
+
+</html>
